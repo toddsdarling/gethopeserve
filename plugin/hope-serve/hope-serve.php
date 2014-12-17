@@ -108,7 +108,7 @@ if (!class_exists('HCC_Serve')) {
 				$job_info = get_post($_POST['hcc_serveopp_id']);
 
 				//send email through Mandrill
-				$mandrillObj = new Mandrill('XYmUvPTCRIgZ1obCZoYx5w');
+				$mandrillObj = new Mandrill('XXXX');
 				//set up message params
 				$mandrillMessage = new Mandrill_Messages($mandrillObj);
 

@@ -4,7 +4,7 @@
 
 	//build email that goes to the user
 	//instantiate Mandrill obj
-	$mandrillObj = new Mandrill('XYmUvPTCRIgZ1obCZoYx5w');
+	$mandrillObj = new Mandrill('XXXX');
 	
 	//set up message params
 	$mandrillMessage = new Mandrill_Messages($mandrillObj);		
