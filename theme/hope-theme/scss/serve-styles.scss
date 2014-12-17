@@ -1,0 +1,218 @@
+$breakpoint-large: 970px;
+$breakpoint-small: 670px;
+
+
+.page-content {
+	position:relative;
+
+	@media screen and (min-width: $breakpoint-large) {
+		max-width:800px;
+		margin:0px auto;
+	}
+
+}
+
+h4 .inner {
+	color:#5fb266;
+}
+
+.accordion {
+	border-bottom:0px;
+}
+
+.accordion .tab .inner {
+	padding:18px 5px 18px 35px;
+}
+
+.hcc-serve-list {
+	margin:4px 0px;
+}
+
+.hcc-serve-list span {
+	color:#5fb266;
+}
+
+.hcc-serve-list-details {
+	display: inline-block;
+	margin: 4px 20px 0 0;
+	font: 400 13px/22px Source Sans Pro;
+}
+
+
+.hcc-serve-list.servingopp-container {	
+	margin:0px;
+	padding:0 0 30px 0;
+	position:relative;
+	overflow: hidden;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	box-sizing: border-box;	
+	-webkit-backface-visibility: visible;
+}
+
+.hcc-serve-list.servingopp-opportunity {
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	float:left;
+	 -webkit-animation: oppslideon .5s;
+	  -webkit-animation-fill-mode: forwards; 
+	  animation: oppslideon .5s;
+	  animation-fill-mode: forwards;	
+}
+
+@-webkit-keyframes oppslideon{
+  
+  0% {
+    
+    -webkit-transform: translateX(-150%);
+    transform: translateX(-150%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }    
+}
+
+.hcc-serve-list.servingopp-opportunity.slideoff {
+	 -webkit-animation: oppslideoff .5s;
+	  -webkit-animation-fill-mode: forwards; 
+	  animation: oppslideoff .5s;
+	  animation-fill-mode: forwards;	
+	-webkit-transform: translateX(-150%);
+	transform: translateX(-150%);	  
+}
+
+@-webkit-keyframes oppslideoff{
+  
+  0% {
+    
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(-150%);
+    transform: translateX(-150%);
+  }    
+}
+
+
+.hcc-serve-list.servingopp-form-container {
+	background-color:#efefef;
+	position: absolute;
+	-webkit-transform: translateX(200%);
+	transform: translateX(200%);
+	float: left;
+	left:200%;
+	width:100%;
+	 -webkit-animation: formslideoff .5s;
+	  -webkit-animation-fill-mode: forwards; 
+	  animation: formslideoff .5s;
+	  animation-fill-mode: forwards;	
+	  box-sizing: border-box;
+	  -webkit-backface-visibility: hidden;	
+
+	@media screen and (max-width: $breakpoint-small) {
+		width:100%;
+	}
+}
+
+@-webkit-keyframes formslideoff {
+  
+  0% {
+    
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+  }    
+}
+
+.hcc-serve-list.servingopp-form-container.slideon {
+	 -webkit-animation: formslideon .5s;
+	  -webkit-animation-fill-mode: forwards; 
+	  animation: formslideon .5s;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);	  
+	  animation-fill-mode: forwards;
+	  left:auto;
+	   box-sizing: border-box;	
+
+}
+
+@-webkit-keyframes formslideon {
+  
+  0% {
+    
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }    
+}
+
+.hcc-serve-list.servingopp-form-container form {
+	padding:8px;
+}
+
+.hcc-serve-list.servingopp-form-container form p {
+	margin:.6em 0;
+}
+
+
+.hcc-serve-list.servingopp-form-closebtn {
+	float:right;
+	margin:0px;
+	padding:0px;
+}
+
+.hcc-serve-list label {
+	display: block !important;
+}
+
+.hcc-serve-list.inline {
+	display:inline-block;
+}
+
+.hcc-serve-list.servingopp-form-phonecontainer input {
+	width:60px;
+}
+
+.hcc-serve-list.servingopp-form-emailcontainer input {
+	width:250px;
+}
+
+.hcc-serve-list.servingopp-form-container input {
+	padding:4px;
+}
+
+.hcc-serve-list.servingopp-form-container input.error, .hcc-serve-list.servingopp-container select.error {
+	border:1px solid red;
+}
+
+/* used only to hide the clone of the form that's created when it first moves on the scren */
+.hcc-serve-formClone {
+	float:none;
+	position:relative;
+	visibility: hidden;
+	display:none;
+}
+
+
+.hcc-servingopp-successMessage {
+	font-weight:700;
+	font-size:1.3em;
+	padding:15px;
+	box-sizing:border-box;
+}
+

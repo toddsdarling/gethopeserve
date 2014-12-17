@@ -1,0 +1,19 @@
+/*
+Theme Name:     Hope Community Church Child Theme
+Theme URI:      http://www.gethope.net
+Description:    This is a child theme based off The Church Theme 
+Author:         Todd Darling
+Author URI:     http://www.gethope.net
+Template:       church-event
+Version:        1.0
+*/
+
+
+#mc_signup_form .mc_var_label {
+	display:block;
+}
+
+#mc_signup_submit {
+	width:60% !important;
+	padding:20px !important;
+}
